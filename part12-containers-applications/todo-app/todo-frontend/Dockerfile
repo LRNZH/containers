@@ -4,7 +4,7 @@ FROM node:16
 WORKDIR /app
 
 # Set the backend URL environment variable
-ENV REACT_APP_BACKEND_URL=http://localhost:3000
+ENV REACT_APP_BACKEND_URL=http://localhost:8000/api
 
 # Expose the port on which the frontend will run
 ENV PORT 3001

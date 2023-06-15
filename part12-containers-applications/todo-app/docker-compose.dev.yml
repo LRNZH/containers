@@ -69,6 +69,6 @@ services:
     depends_on:
       - app
       - server
-      - redis
-      - mongo
-      - mongo-express
+volumes:
+  redis-data:
+  mongo-data:
