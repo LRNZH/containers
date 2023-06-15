@@ -1,0 +1,12 @@
+StatusCode        : 200
+StatusDescription : OK
+Content           :
+                    <!DOCTYPE html>
+                    <html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+                    icon="hy-icon-caret-right"></HY-ICON><SPAN>War in Ukraine </SPAN>; innerText=War in Ukraine ;      
+                    outerHTML=<A class=hy-desktop-menu__panel-link href="/en/news/war-ukraine" target=_self><HY-ICON   
+                    size="10" icon="hy-icon-caret-right"></HY-ICON><SPAN>War in Ukraine </SPAN></A>; outerText=War in  
+                    Ukraine ; tagName=A; class=hy-desktop-menu__panel-link; href=/en/news/war-ukraine;
+                    target=_self}...}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 725077

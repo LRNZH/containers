@@ -1,0 +1,75 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20230612113228
+Username: DESKTOP-D10U003\fullm
+RunAs User: DESKTOP-D10U003\fullm
+Configuration Name: 
+Machine: DESKTOP-D10U003 (Microsoft Windows NT 10.0.22621.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\fullm\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+Process ID: 27092
+PSVersion: 5.1.22621.1778
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.1778
+BuildVersion: 10.0.22621.1778
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is exercise12_8.txt
+
+PS ...\Coding\FullstackOpen\GitRepos\containers\part12-containers-applications\todo-app\todo-backend> docker exec -it todo-backend-mongo-1 bash
+
+root@a0277b17968c:/# mongosh
+Current Mongosh Log ID: 6486f458930f6806caa4d695
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.9.1
+Using MongoDB:          6.0.6
+Using Mongosh:          1.9.1
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+test> use admin
+switched to db admin
+
+admin> db.auth('root', 'example')
+{ ok: 1 }
+
+admin> use the_database
+switched to db the_database
+
+the_database> show collections
+todos
+
+the_database> db.todos.find({})
+[
+  {
+    _id: ObjectId("6486f1e06ec933218c9978fb"),
+    text: 'Write code',
+    done: true
+  },
+  {
+    _id: ObjectId("6486f1e06ec933218c9978fc"),
+    text: 'Learn about containers',
+    done: false
+  }
+]
+
+the_database> db.todos.insertOne({ text: 'Increase the number of tools in my toolbelt', done: false })
+{
+  acknowledged: true,
+  insertedId: ObjectId("6486f4cf930f6806caa4d696")
+}
+
+the_database> exit
+
+root@a0277b17968c:/# exit
+
+exit
+
+
+C:...\Coding\FullstackOpen\GitRepos\containers\part12-containers-applications\todo-app\todo-backend>
+PS>Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20230612113555
+**********************

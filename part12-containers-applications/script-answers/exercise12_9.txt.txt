@@ -1,0 +1,54 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20230612130334
+Username: DESKTOP-D10U003\fullm
+RunAs User: DESKTOP-D10U003\fullm
+Configuration Name: 
+Machine: DESKTOP-D10U003 (Microsoft Windows NT 10.0.22621.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\fullm\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+Process ID: 27092
+PSVersion: 5.1.22621.1778
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.1778
+BuildVersion: 10.0.22621.1778
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is exercise12_11.txt.txt
+
+C:..\Coding\FullstackOpen\GitRepos\containers\part12-containers-applications\todo-app\todo-backend> docker exec -it todo-backend-redis-1 redis-cli  
+127.0.0.1:6379> KEYS *
+1) "todoCounter"
+
+127.0.0.1:6379> GET todoCounter
+"3"
+
+127.0.0.1:6379> SET todoCounter 9001
+OK
+
+127.0.0.1:6379> GET todoCounter
+"9001"
+
+127.0.0.1:6379> GET todoCounter
+"3"
+
+127.0.0.1:6379> DEL todoCounter
+(integer) 1
+
+127.0.0.1:6379> GET todoCounter
+(nil)
+
+127.0.0.1:6379> GET todoCounter
+"5"
+
+127.0.0.1:6379> exit
+PS C:\Users\fullm\Documents\Education\Coding\FullstackOpen\GitRepos\containers\part12-containers-applications\todo-app\todo-backend> Stop-Transcript 
+
+
+PS>Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20230612131036
+**********************

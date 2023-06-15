@@ -1,0 +1,75 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20230611114418
+Username: DESKTOP-D10U003\fullm
+RunAs User: DESKTOP-D10U003\fullm
+Configuration Name: 
+Machine: DESKTOP-D10U003 (Microsoft Windows NT 10.0.22621.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 32084
+PSVersion: 5.1.22621.1778
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.1778
+BuildVersion: 10.0.22621.1778
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is exercise12_3.txt
+PS ...\Coding\FullstackOpen\GitRepos\containers\part12-containers-applications\script-answers> docker start -i youthful_noyce
+
+root@cdc687bddc30:/# apt-get update
+Get:1 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:3 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [36.3 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:5 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [456 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [108 kB]
+Get:7 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [575 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1792 kB]
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [928 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]                                   
+Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [457 kB]                           
+Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [857 kB]                                 
+Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [42.2 kB]                          
+Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1176 kB]                            
+Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [27.0 kB]                          
+Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [49.4 kB]                              
+Fetched 24.9 MB in 21s (1206 kB/s)                                                                                 
+Reading package lists... Done
+root@cdc687bddc30:/# apt-get -y install nano
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Suggested packages:
+  hunspell
+The following NEW packages will be installed:
+  nano
+0 upgraded, 1 newly installed, 0 to remove and 7 not upgraded.
+Need to get 280 kB of archives.
+After this operation, 881 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy/main amd64 nano amd64 6.2-1 [280 kB]
+Fetched 280 kB in 1s (389 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package nano.
+(Reading database ... 4395 files and directories currently installed.)
+Preparing to unpack .../archives/nano_6.2-1_amd64.deb ...
+Unpacking nano (6.2-1) ...
+Setting up nano (6.2-1) ...
+update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/editor.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group editor) doesn't exist
+update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/pico.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group pico) doesn't exist
+root@cdc687bddc30:/# nano /usr/src/app/index.js
+root@cdc687bddc30:/# exit
+exit
+
+
+PS ...\Coding\FullstackOpen\GitRepos\containers\part12-containers-applications\script-answers> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20230611115102
+**********************
